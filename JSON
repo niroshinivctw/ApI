@@ -1,0 +1,41 @@
+package com.example.containeroptimizer.model;
+
+import java.util.List;
+
+public class PickSpotRequest {
+    private List<List<Integer>> yardMap;
+
+    public List<List<Integer>> getYardMap() {
+        return yardMap;
+    }
+
+    public void setYardMap(List<List<Integer>> yardMap) {
+        this.yardMap = yardMap;
+    }
+}
+
+JSON Request to Test:
+
+If you want to test the API, you can send the following JSON request to POST /pickSpot:
+
+{
+  "yardMap": [
+    [5, 8, 9],
+    [4, 3, 6],
+    [7, 2, 1]
+  ]
+}
+
+Expected Response:
+
+If the service logic is working, it should return the optimal spot (in this case, the lowest score):
+
+{
+  "row": 2,
+  "column": 2,
+  "score": 1
+}
+
+
+---
+
