@@ -18,6 +18,13 @@ It finds the best spot (lowest score) in the yard map.
     [7, 2, 1]
   ]
 }
+{
+  "yardMap": [
+    [5, 8, 9],
+    [4, 3, 6],
+    [7, 2, 1]
+  ]
+}
 package com.example.containeroptimizer.model;
 
 public class PickSpotResponse {
@@ -41,3 +48,18 @@ public class PickSpotResponse {
     }
 
     public int getColumn() {
+        return column;
+    }
+
+    public void setColumn(int column) {
+        this.column = column;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+}
