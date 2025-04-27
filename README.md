@@ -18,3 +18,26 @@ It finds the best spot (lowest score) in the yard map.
     [7, 2, 1]
   ]
 }
+package com.example.containeroptimizer.model;
+
+public class PickSpotResponse {
+    private int row;
+    private int column;
+    private int score;
+
+    public PickSpotResponse(int row, int column, int score) {
+        this.row = row;
+        this.column = column;
+        this.score = score;
+    }
+
+    // Getters and Setters
+    public int getRow() {
+        return row;
+    }
+
+    public void setRow(int row) {
+        this.row = row;
+    }
+
+    public int getColumn() {
