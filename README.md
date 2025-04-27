@@ -25,20 +25,3 @@ It finds the best spot (lowest score) in the yard map.
     [7, 2, 1]
   ]
 }
-package com.example.containeroptimizer.model;
-
-import java.util.List;
-
-public class PickSpotRequest {
-    private List<List<Integer>> yardMap;
-
-    // Getter and Setter for yardMap
-    public List<List<Integer>> getYardMap() {
-        return yardMap;
-    }
-
-    public void setYardMap(List<List<Integer>> yardMap) {
-        this.yardMap = yardMap;
-    }
-}
-    
